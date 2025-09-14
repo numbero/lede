@@ -61,11 +61,12 @@ jobs:
 
       - name: Load third-party plugin
         run: |
+          # 编译时会自动逐层遍历package下所有的包
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone https://github.com/esirplayground/luci-app-poweroff.git
-          git clone https://github.com/Ameykyl/luci-app-koolproxyR.git
+          #git clone https://github.com/esirplayground/luci-app-poweroff.git
+          #git clone https://github.com/Ameykyl/luci-app-koolproxyR.git
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
           git clone https://github.com/rosywrt/luci-theme-rosy.git
 
